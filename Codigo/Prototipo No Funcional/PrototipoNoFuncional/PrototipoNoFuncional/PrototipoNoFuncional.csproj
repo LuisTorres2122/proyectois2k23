@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6E6ABFC-3741-46CE-A945-EB7BE8C9E693}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrototipoNoFuncional</RootNamespace>
+    <AssemblyName>PrototipoNoFuncional</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NavegadorVista">
+      <HintPath>T:\Univesidad2.0\9semestre\IS\Proyecto1\proyectois2k23\Codigo\Componentes\Navegador\Vista\bin\Debug\NavegadorVista.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Antiguedad de saldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antiguedad de saldos.Designer.cs">
+      <DependentUpon>Antiguedad de saldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaDatos.Designer.cs">
+      <DependentUpon>BusquedaDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Concepto.Designer.cs">
+      <DependentUpon>Concepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDICuentasPorPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDICuentasPorPagar.designer.cs">
+      <DependentUpon>MDICuentasPorPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moneda.Designer.cs">
+      <DependentUpon>Moneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moviminetos CxP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moviminetos CxP.Designer.cs">
+      <DependentUpon>Moviminetos CxP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor.Designer.cs">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte Cuentas Por Pagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte Cuentas Por Pagar.Designer.cs">
+      <DependentUpon>Reporte Cuentas Por Pagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoPago.Designer.cs">
+      <DependentUpon>TipoPago.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Antiguedad de saldos.resx">
+      <DependentUpon>Antiguedad de saldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaDatos.resx">
+      <DependentUpon>BusquedaDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Concepto.resx">
+      <DependentUpon>Concepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDICuentasPorPagar.resx">
+      <DependentUpon>MDICuentasPorPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moneda.resx">
+      <DependentUpon>Moneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moviminetos CxP.resx">
+      <DependentUpon>Moviminetos CxP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Proveedor.resx">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte Cuentas Por Pagar.resx">
+      <DependentUpon>Reporte Cuentas Por Pagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoPago.resx">
+      <DependentUpon>TipoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
