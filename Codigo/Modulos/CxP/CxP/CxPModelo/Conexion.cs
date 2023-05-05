@@ -12,7 +12,7 @@ namespace CxPModelo
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=CxP");
+            OdbcConnection conn = new OdbcConnection("Dsn=colchoneria");
 
             try
             {
