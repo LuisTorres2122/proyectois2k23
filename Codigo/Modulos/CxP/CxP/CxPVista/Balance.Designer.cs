@@ -29,33 +29,15 @@ namespace CxPVista
         /// </summary>
         private void InitializeComponent()
         {
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnReporte = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnHelp = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton1.IconSize = 36;
-            this.iconButton1.Location = new System.Drawing.Point(444, 21);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(69, 61);
-            this.iconButton1.TabIndex = 58;
-            this.iconButton1.Text = "Buscar";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -79,24 +61,6 @@ namespace CxPVista
             this.textBox3.Size = new System.Drawing.Size(177, 20);
             this.textBox3.TabIndex = 59;
             // 
-            // btnReporte
-            // 
-            this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnReporte.FlatAppearance.BorderSize = 2;
-            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReporte.IconChar = FontAwesome.Sharp.IconChar.BalanceScale;
-            this.btnReporte.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.btnReporte.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnReporte.IconSize = 36;
-            this.btnReporte.Location = new System.Drawing.Point(545, 21);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(69, 61);
-            this.btnReporte.TabIndex = 56;
-            this.btnReporte.Text = "Balance";
-            this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnReporte.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -118,19 +82,55 @@ namespace CxPVista
             this.button2.Text = "?";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnHelp.FlatAppearance.BorderSize = 2;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.btnHelp.IconColor = System.Drawing.Color.DimGray;
+            this.btnHelp.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnHelp.IconSize = 40;
+            this.btnHelp.Location = new System.Drawing.Point(546, 12);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(69, 61);
+            this.btnHelp.TabIndex = 76;
+            this.btnHelp.Text = "Ayuda";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 36;
+            this.iconButton1.Location = new System.Drawing.Point(417, 12);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(69, 61);
+            this.iconButton1.TabIndex = 75;
+            this.iconButton1.Text = "Buscar";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
             // Balance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(93)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(687, 411);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnReporte);
             this.Name = "Balance";
             this.Text = "Balance";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -140,13 +140,12 @@ namespace CxPVista
         }
 
         #endregion
-
-        private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private FontAwesome.Sharp.IconButton btnReporte;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
+        private FontAwesome.Sharp.IconButton btnHelp;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

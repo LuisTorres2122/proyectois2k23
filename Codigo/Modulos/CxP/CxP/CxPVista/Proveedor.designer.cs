@@ -29,7 +29,6 @@ namespace CxPVista
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,16 +44,9 @@ namespace CxPVista
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.navegador1 = new NavegadorVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(39, 14);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(582, 160);
-            this.navegador1.TabIndex = 0;
             // 
             // label1
             // 
@@ -190,12 +182,20 @@ namespace CxPVista
             this.dataGridView1.Size = new System.Drawing.Size(593, 226);
             this.dataGridView1.TabIndex = 15;
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(58, 12);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(574, 152);
+            this.navegador1.TabIndex = 16;
+            // 
             // Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(93)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(659, 606);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -211,7 +211,6 @@ namespace CxPVista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "Proveedor";
             this.Text = "Proveedor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -221,8 +220,6 @@ namespace CxPVista
         }
 
         #endregion
-
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -238,5 +235,6 @@ namespace CxPVista
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private NavegadorVista.Navegador navegador1;
     }
 }

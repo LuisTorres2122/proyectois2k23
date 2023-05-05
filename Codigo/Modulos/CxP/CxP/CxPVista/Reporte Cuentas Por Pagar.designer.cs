@@ -35,8 +35,9 @@ namespace CxPVista
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btnReporte = new FontAwesome.Sharp.IconButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -46,8 +47,7 @@ namespace CxPVista
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReporte = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -115,24 +115,6 @@ namespace CxPVista
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // btnReporte
-            // 
-            this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnReporte.FlatAppearance.BorderSize = 2;
-            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReporte.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.btnReporte.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.btnReporte.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnReporte.IconSize = 36;
-            this.btnReporte.Location = new System.Drawing.Point(407, 194);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(69, 61);
-            this.btnReporte.TabIndex = 51;
-            this.btnReporte.Text = "Reportes";
-            this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnReporte.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
@@ -150,6 +132,28 @@ namespace CxPVista
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(22)))), ((int)(((byte)(14)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(108, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(16, 25);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "?";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(22)))), ((int)(((byte)(14)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(108, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(16, 25);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "?";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox4
             // 
@@ -228,35 +232,31 @@ namespace CxPVista
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 36;
-            this.iconButton1.Location = new System.Drawing.Point(287, 194);
+            this.iconButton1.Location = new System.Drawing.Point(290, 204);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(69, 61);
-            this.iconButton1.TabIndex = 54;
+            this.iconButton1.TabIndex = 56;
             this.iconButton1.Text = "Buscar";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnReporte
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(22)))), ((int)(((byte)(14)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(108, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(16, 25);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "?";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(22)))), ((int)(((byte)(14)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(108, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(16, 25);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "?";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnReporte.FlatAppearance.BorderSize = 2;
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnReporte.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
+            this.btnReporte.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btnReporte.IconSize = 36;
+            this.btnReporte.Location = new System.Drawing.Point(410, 204);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(69, 61);
+            this.btnReporte.TabIndex = 55;
+            this.btnReporte.Text = "Reportes";
+            this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReporte.UseVisualStyleBackColor = true;
             // 
             // Reporte_Cuentas_Por_Pagar
             // 
@@ -265,10 +265,10 @@ namespace CxPVista
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(93)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(800, 501);
             this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Reporte_Cuentas_Por_Pagar";
@@ -291,7 +291,6 @@ namespace CxPVista
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private FontAwesome.Sharp.IconButton btnReporte;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -301,8 +300,9 @@ namespace CxPVista
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnReporte;
     }
 }

@@ -31,8 +31,8 @@ namespace CxPVista
         {
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_codigo = new System.Windows.Forms.TextBox();
-            this.btninsertar = new FontAwesome.Sharp.IconButton();
             this.Dgv_ayudapedido = new System.Windows.Forms.DataGridView();
+            this.btninsertar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ayudapedido)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,14 @@ namespace CxPVista
             this.Txt_codigo.Size = new System.Drawing.Size(316, 20);
             this.Txt_codigo.TabIndex = 63;
             // 
+            // Dgv_ayudapedido
+            // 
+            this.Dgv_ayudapedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ayudapedido.Location = new System.Drawing.Point(29, 147);
+            this.Dgv_ayudapedido.Name = "Dgv_ayudapedido";
+            this.Dgv_ayudapedido.Size = new System.Drawing.Size(759, 274);
+            this.Dgv_ayudapedido.TabIndex = 61;
+            // 
             // btninsertar
             // 
             this.btninsertar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
@@ -62,21 +70,13 @@ namespace CxPVista
             this.btninsertar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
             this.btninsertar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btninsertar.IconSize = 40;
-            this.btninsertar.Location = new System.Drawing.Point(356, 7);
+            this.btninsertar.Location = new System.Drawing.Point(343, 12);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(69, 61);
-            this.btninsertar.TabIndex = 62;
+            this.btninsertar.TabIndex = 65;
             this.btninsertar.Text = "Insertar";
             this.btninsertar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btninsertar.UseVisualStyleBackColor = true;
-            // 
-            // Dgv_ayudapedido
-            // 
-            this.Dgv_ayudapedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_ayudapedido.Location = new System.Drawing.Point(29, 147);
-            this.Dgv_ayudapedido.Name = "Dgv_ayudapedido";
-            this.Dgv_ayudapedido.Size = new System.Drawing.Size(759, 274);
-            this.Dgv_ayudapedido.TabIndex = 61;
             // 
             // BusquedaDatos
             // 
@@ -84,9 +84,9 @@ namespace CxPVista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(93)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btninsertar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_codigo);
-            this.Controls.Add(this.btninsertar);
             this.Controls.Add(this.Dgv_ayudapedido);
             this.Name = "BusquedaDatos";
             this.Text = "BusquedaDatos";
@@ -101,7 +101,7 @@ namespace CxPVista
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Txt_codigo;
-        private FontAwesome.Sharp.IconButton btninsertar;
         private System.Windows.Forms.DataGridView Dgv_ayudapedido;
+        private FontAwesome.Sharp.IconButton btninsertar;
     }
 }

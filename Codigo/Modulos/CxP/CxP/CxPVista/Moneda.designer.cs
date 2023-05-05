@@ -145,12 +145,10 @@ namespace CxPVista
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Location = new System.Drawing.Point(12, 12);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(578, 155);
-            this.navegador1.TabIndex = 16;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            this.navegador1.Size = new System.Drawing.Size(574, 152);
+            this.navegador1.TabIndex = 32;
             // 
             // Moneda
             // 
@@ -158,6 +156,7 @@ namespace CxPVista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(93)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(593, 571);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox4);
@@ -169,7 +168,6 @@ namespace CxPVista
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "Moneda";
             this.Text = "Moneda";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

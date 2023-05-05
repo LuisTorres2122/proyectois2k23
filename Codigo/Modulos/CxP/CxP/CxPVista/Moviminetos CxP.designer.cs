@@ -56,8 +56,6 @@ namespace CxPVista
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btncancelar = new FontAwesome.Sharp.IconButton();
-            this.btninsertar = new FontAwesome.Sharp.IconButton();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -71,6 +69,8 @@ namespace CxPVista
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnHelp = new FontAwesome.Sharp.IconButton();
+            this.btncancelar = new FontAwesome.Sharp.IconButton();
+            this.btninsertar = new FontAwesome.Sharp.IconButton();
             this.gpbProveedor.SuspendLayout();
             this.gpbConcepto.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -313,11 +313,11 @@ namespace CxPVista
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btncancelar);
+            this.groupBox2.Controls.Add(this.btninsertar);
             this.groupBox2.Controls.Add(this.textBox16);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.btncancelar);
-            this.groupBox2.Controls.Add(this.btninsertar);
             this.groupBox2.Controls.Add(this.textBox15);
             this.groupBox2.Controls.Add(this.textBox14);
             this.groupBox2.Controls.Add(this.textBox13);
@@ -366,42 +366,6 @@ namespace CxPVista
             this.button4.TabIndex = 18;
             this.button4.Text = "?";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btncancelar.FlatAppearance.BorderSize = 2;
-            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancelar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btncancelar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
-            this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btncancelar.IconSize = 40;
-            this.btncancelar.Location = new System.Drawing.Point(194, 149);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(69, 61);
-            this.btncancelar.TabIndex = 68;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btncancelar.UseVisualStyleBackColor = true;
-            // 
-            // btninsertar
-            // 
-            this.btninsertar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btninsertar.FlatAppearance.BorderSize = 2;
-            this.btninsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninsertar.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.btninsertar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
-            this.btninsertar.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btninsertar.IconSize = 40;
-            this.btninsertar.Location = new System.Drawing.Point(65, 149);
-            this.btninsertar.Name = "btninsertar";
-            this.btninsertar.Size = new System.Drawing.Size(69, 61);
-            this.btninsertar.TabIndex = 67;
-            this.btninsertar.Text = "Insertar";
-            this.btninsertar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btninsertar.UseVisualStyleBackColor = true;
             // 
             // textBox15
             // 
@@ -510,14 +474,49 @@ namespace CxPVista
             this.btnHelp.IconColor = System.Drawing.Color.DimGray;
             this.btnHelp.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnHelp.IconSize = 40;
-            this.btnHelp.Location = new System.Drawing.Point(762, 35);
+            this.btnHelp.Location = new System.Drawing.Point(762, 32);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(69, 61);
-            this.btnHelp.TabIndex = 69;
+            this.btnHelp.TabIndex = 73;
             this.btnHelp.Text = "Ayuda";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btncancelar
+            // 
+            this.btncancelar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btncancelar.FlatAppearance.BorderSize = 2;
+            this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancelar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btncancelar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
+            this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btncancelar.IconSize = 40;
+            this.btncancelar.Location = new System.Drawing.Point(181, 148);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(69, 61);
+            this.btncancelar.TabIndex = 72;
+            this.btncancelar.Text = "Cancelar";
+            this.btncancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncancelar.UseVisualStyleBackColor = true;
+            // 
+            // btninsertar
+            // 
+            this.btninsertar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btninsertar.FlatAppearance.BorderSize = 2;
+            this.btninsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninsertar.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.btninsertar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
+            this.btninsertar.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btninsertar.IconSize = 40;
+            this.btninsertar.Location = new System.Drawing.Point(59, 148);
+            this.btninsertar.Name = "btninsertar";
+            this.btninsertar.Size = new System.Drawing.Size(69, 61);
+            this.btninsertar.TabIndex = 71;
+            this.btninsertar.Text = "Insertar";
+            this.btninsertar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btninsertar.UseVisualStyleBackColor = true;
             // 
             // Moviminetos_CxP
             // 
@@ -579,9 +578,6 @@ namespace CxPVista
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private FontAwesome.Sharp.IconButton btncancelar;
-        private FontAwesome.Sharp.IconButton btninsertar;
-        private FontAwesome.Sharp.IconButton btnHelp;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
@@ -589,5 +585,8 @@ namespace CxPVista
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label17;
+        private FontAwesome.Sharp.IconButton btncancelar;
+        private FontAwesome.Sharp.IconButton btninsertar;
+        private FontAwesome.Sharp.IconButton btnHelp;
     }
 }
