@@ -11,11 +11,23 @@ namespace CxPVista
 {
     public partial class MDICuentasPorPagar : Form
     {
-
+        Seguridad_Controlador.Controlador cnseg = new Seguridad_Controlador.Controlador();
         public MDICuentasPorPagar()
         {
             InitializeComponent();
             customizeDesing();
+            Button[] apps = { btnProveedor, btnConcepto, btnTipoPago, btnMoneda, btnMoviminetos, btnBalance,btnFactura, btnreportemovimientos, btnAntiguedad };
+            cnseg.deshabilitarApps(apps);
+
+            cnseg.getAccesoApp(5001, apps[0]);
+            cnseg.getAccesoApp(5002, apps[1]);
+            cnseg.getAccesoApp(5003, apps[2]);
+            cnseg.getAccesoApp(5004, apps[3]);
+            cnseg.getAccesoApp(5101, apps[4]);
+            cnseg.getAccesoApp(5102, apps[5]);
+            cnseg.getAccesoApp(5103, apps[6]);
+            cnseg.getAccesoApp(5201, apps[7]);
+            cnseg.getAccesoApp(5202, apps[8]);
         }
 
         private void customizeDesing()
@@ -143,6 +155,16 @@ namespace CxPVista
             //Ocultar submenu
             hideSubMenu();
 
+        }
+
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+            //Codigo
+            Factura factura = new Factura();
+            factura.MdiParent = this;
+            factura.Show();
+            //Ocultar submenu
+            hideSubMenu();
         }
     }
 }

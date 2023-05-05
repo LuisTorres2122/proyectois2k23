@@ -35,6 +35,7 @@ namespace CxPVista
             this.btnreportemovimientos = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panelProcesos = new System.Windows.Forms.Panel();
+            this.btnBalance = new System.Windows.Forms.Button();
             this.btnMoviminetos = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.panelcatalogo = new System.Windows.Forms.Panel();
@@ -44,7 +45,7 @@ namespace CxPVista
             this.btnProveedor = new System.Windows.Forms.Button();
             this.btnCatalogos = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnBalance = new System.Windows.Forms.Button();
+            this.btnFactura = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelReportes.SuspendLayout();
             this.panelProcesos.SuspendLayout();
@@ -134,6 +135,7 @@ namespace CxPVista
             // panelProcesos
             // 
             this.panelProcesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(28)))), ((int)(((byte)(18)))));
+            this.panelProcesos.Controls.Add(this.btnFactura);
             this.panelProcesos.Controls.Add(this.btnBalance);
             this.panelProcesos.Controls.Add(this.btnMoviminetos);
             this.panelProcesos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -141,6 +143,22 @@ namespace CxPVista
             this.panelProcesos.Name = "panelProcesos";
             this.panelProcesos.Size = new System.Drawing.Size(237, 143);
             this.panelProcesos.TabIndex = 3;
+            // 
+            // btnBalance
+            // 
+            this.btnBalance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBalance.FlatAppearance.BorderSize = 0;
+            this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBalance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBalance.Location = new System.Drawing.Point(0, 35);
+            this.btnBalance.Name = "btnBalance";
+            this.btnBalance.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btnBalance.Size = new System.Drawing.Size(237, 35);
+            this.btnBalance.TabIndex = 1;
+            this.btnBalance.Text = "Balance de saldos";
+            this.btnBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBalance.UseVisualStyleBackColor = true;
+            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnMoviminetos
             // 
@@ -282,21 +300,21 @@ namespace CxPVista
             this.panelLogo.Size = new System.Drawing.Size(237, 70);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnBalance
+            // btnFactura
             // 
-            this.btnBalance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBalance.FlatAppearance.BorderSize = 0;
-            this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBalance.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBalance.Location = new System.Drawing.Point(0, 35);
-            this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btnBalance.Size = new System.Drawing.Size(237, 35);
-            this.btnBalance.TabIndex = 1;
-            this.btnBalance.Text = "Balance de saldos";
-            this.btnBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBalance.UseVisualStyleBackColor = true;
-            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
+            this.btnFactura.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFactura.FlatAppearance.BorderSize = 0;
+            this.btnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactura.Location = new System.Drawing.Point(0, 70);
+            this.btnFactura.Name = "btnFactura";
+            this.btnFactura.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btnFactura.Size = new System.Drawing.Size(237, 35);
+            this.btnFactura.TabIndex = 2;
+            this.btnFactura.Text = "Ingreso Factura";
+            this.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFactura.UseVisualStyleBackColor = true;
+            this.btnFactura.Click += new System.EventHandler(this.btnFactura_Click);
             // 
             // MDICuentasPorPagar
             // 
@@ -334,5 +352,6 @@ namespace CxPVista
         private System.Windows.Forms.Button btnTipoPago;
         private System.Windows.Forms.Button btnAntiguedad;
         private System.Windows.Forms.Button btnBalance;
+        private System.Windows.Forms.Button btnFactura;
     }
 }
