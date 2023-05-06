@@ -297,7 +297,7 @@ namespace Vista_Seguridad
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.btnverificar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.navegador1);
+           this.Controls.Add(this.navegador1);
             this.Controls.Add(this.CmbPA);
             this.Controls.Add(this.txtestado);
             this.Controls.Add(this.label8);

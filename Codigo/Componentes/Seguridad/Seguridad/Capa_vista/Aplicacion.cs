@@ -21,10 +21,11 @@ namespace Vista_Seguridad
             InitializeComponent();
         }
 
-        
+
 
         private void navegador1_Load(object sender, EventArgs e)
-        {
+        { 
+            
             NavegadorVista.Navegador.idApp = "1002";
             navegador1.actual = this;
             navegador1.tabla = Dgv_modulos;

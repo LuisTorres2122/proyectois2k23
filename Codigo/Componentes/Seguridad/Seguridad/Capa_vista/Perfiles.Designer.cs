@@ -82,6 +82,7 @@ namespace Vista_Seguridad
             // 
             // navegador1
             // 
+            
             this.navegador1.Location = new System.Drawing.Point(24, 12);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(670, 140);

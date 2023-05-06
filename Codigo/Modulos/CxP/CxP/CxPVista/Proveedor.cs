@@ -20,6 +20,7 @@ namespace CxPVista
 
         private void navegador1_Load(object sender, EventArgs e)
         {
+            /*
             NavegadorVista.Navegador.idApp = "5002";
             TextBox[] Grupotextbox = { txtid,txtnombre,txtdireccion,txttelefono,txtcorreo,
             txtrubro,txtsaldoanterior, txtsaldoactual, txtcargo, txtabono, txtcargoacum, txtabonoacum, txtestado};
@@ -28,7 +29,7 @@ namespace CxPVista
             navegador1.tabla = dataGridView1;
             navegador1.textboxi = Idtextbox;
             navegador1.actual = this;
-            navegador1.cargar(dataGridView1, Grupotextbox, "CxP");
+            navegador1.cargar(dataGridView1, Grupotextbox, "CxP");*/
         }
 
         private void Proveedor_Load(object sender, EventArgs e)

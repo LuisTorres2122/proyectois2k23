@@ -24,6 +24,7 @@ namespace Vista_Seguridad
 
         private void navegador1_Load(object sender, EventArgs e)
         {
+            
             NavegadorVista.Navegador.idApp = "1003";
             navegador1.actual = this;
             navegador1.tabla = Dgv_perfiles;

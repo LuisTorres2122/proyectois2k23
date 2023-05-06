@@ -44,6 +44,7 @@ namespace Vista_Seguridad
 
         private void navegador1_Load(object sender, EventArgs e)//Aplicacion del navegador
         {
+            
             NavegadorVista.Navegador.idApp = "1001";
             navegador1.actual = this;
             navegador1.tabla = dataGridView1;
