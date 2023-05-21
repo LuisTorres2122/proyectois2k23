@@ -58,8 +58,7 @@ namespace CxPControlador
                 }
                 //sn.insertar(dato, tipo, tabla.Tag.ToString());
     
-                //sn.actualizartransaccion(dato, tipo, tabla.Tag.ToString(), proveedor );
-                sn.actualizartransaccion(dato, tipo, tabla.Tag.ToString(), datocxp, proveedor);
+                sn.actualizartransaccion(dato, tipo, tabla.Tag.ToString(), datocxp, proveedor );
             }
             catch (Exception e)
             {

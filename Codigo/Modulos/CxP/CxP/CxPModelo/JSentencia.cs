@@ -61,7 +61,6 @@ namespace CxPModelo
         }*/
 
 
-        //public void actualizartransaccion(string dato, string tipo, string tabla, string proveedor)
         public void actualizartransaccion(string dato, string tipo, string tabla, string datocxp, string proveedor)
         {
 
@@ -85,7 +84,7 @@ namespace CxPModelo
                 string sqlcxp = "Insert into tbl_cuentaporpagar(pk_id_cuentaporpagar, pk_id_almacen, pk_id_proveedor, pk_id_factura, fk_id_tipopago, fk_id_moneda, fk_id_conceptocuentaporpagar, cambio_moneda_cuentaporpagar, fecha_emision_cuentaporpagar, fecha_movimiento_cuentaporpagar, saldo_pago_cuentaporpagar, monto_pago_cuentaporpagar, estado_cuentaporpagar ) values ( " + datocxp + " );";
                 command.CommandText = sqlcxp;
                 command.ExecuteNonQuery();
-                
+
                 
                 command.CommandText = proveedor;
                 command.ExecuteNonQuery();

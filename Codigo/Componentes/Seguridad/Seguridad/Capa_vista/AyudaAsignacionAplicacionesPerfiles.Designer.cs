@@ -47,7 +47,7 @@ namespace Vista_Seguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 519);
+            this.ClientSize = new System.Drawing.Size(573, 485);
             this.Controls.Add(this.pictureBox1);
             this.Name = "AyudaAsignacionAplicacionesPerfiles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

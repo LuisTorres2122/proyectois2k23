@@ -84,8 +84,6 @@ namespace CxPVista
             this.dgvAlmacen.Size = new System.Drawing.Size(258, 170);
             this.dgvAlmacen.TabIndex = 21;
             this.dgvAlmacen.Tag = "tbl_almacen";
-            this.dgvAlmacen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlmacen_CellClick);
-            this.dgvAlmacen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlmacen_CellContentClick);
             // 
             // tabPage2
             // 

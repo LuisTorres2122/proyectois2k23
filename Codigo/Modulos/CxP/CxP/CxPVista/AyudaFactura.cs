@@ -37,15 +37,5 @@ namespace CxPVista
             cn.fillTableProveedor(tabla.Tag.ToString(), dgvProveedor);
 
         }
-
-        private void dgvAlmacen_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvAlmacen_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
