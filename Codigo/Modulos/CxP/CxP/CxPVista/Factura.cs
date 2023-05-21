@@ -160,7 +160,8 @@ namespace CxPVista
 
             //System.Diagnostics.Process.Start("CxPVista/bin/Debug/AyudaFactura/AyudaFactura.chm");
 
-            string rutaAyuda = "../../../../../../Modulos/CxP/CxP/CxPVista/bin/Debug/AyudaFactura/AyudaFactura.chm";
+            //string rutaAyuda = "../../../../../../Modulos/CxP/CxP/CxPVista/bin/Debug//AyudaFactura/AyudaFactura.chm";
+            string rutaAyuda = "../../../../../../../Ayudas/Modulos/CxP/AyudaFactura/AyudaFactura.chm";
             //string rutaAyuda = "AyudaFactura/AyudaFactura.chm";
             Help.ShowHelp(ParentForm, rutaAyuda, "Factura.html");
 
