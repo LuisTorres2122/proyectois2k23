@@ -154,6 +154,7 @@ namespace CxPVista
             this.button2.TabIndex = 61;
             this.button2.Text = "?";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox4
             // 
@@ -228,11 +229,11 @@ namespace CxPVista
             this.iconButton1.FlatAppearance.BorderSize = 2;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(180)))), ((int)(((byte)(227)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 36;
-            this.iconButton1.Location = new System.Drawing.Point(290, 204);
+            this.iconButton1.Location = new System.Drawing.Point(202, 204);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(69, 61);
             this.iconButton1.TabIndex = 56;
